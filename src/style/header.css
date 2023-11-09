@@ -8,8 +8,12 @@ header {
 nav {
   display: flex;
   gap: 30px;
+  align-items: center;
 }
-
-li {
+nav li {
   list-style: none;
+}
+nav a {
+  text-decoration: none;
+  color: #ff6060;
 }/*# sourceMappingURL=header.css.map */

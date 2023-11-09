@@ -1,10 +1,12 @@
-import Header from "../components/Header.js";
+import data from "../data.json";
+import Card from "../components/Card.js";
 
 function Home() {
+  const logements = data.map((logement) => <Card logement={logement} />);
   return (
-    <div>
-      <Header />
-    </div>
+    <>
+      <div className="Accomodation-card">{logements}</div>
+    </>
   );
 }
 
