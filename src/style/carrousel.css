@@ -1,0 +1,22 @@
+.carrouselContainer {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.carrouselContainer .arrowLeft {
+  left: 10px;
+}
+.carrouselContainer .arrowRight {
+  right: 10px;
+}
+
+.carrouselSlide {
+  height: 415px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.arrow {
+  position: absolute;
+}/*# sourceMappingURL=carrousel.css.map */

@@ -74,6 +74,29 @@ footer h2 {
   color: white;
 }
 
+.carrouselContainer {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.carrouselContainer .arrowLeft {
+  left: 10px;
+}
+.carrouselContainer .arrowRight {
+  right: 10px;
+}
+
+.carrouselSlide {
+  height: 415px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.arrow {
+  position: absolute;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
