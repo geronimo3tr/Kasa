@@ -95,6 +95,32 @@ footer h2 {
 
 .arrow {
   position: absolute;
+  cursor: pointer;
+}
+
+.accommodationPresentation {
+  display: flex;
+  color: #FF6060;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.accommodationPresentation h2 {
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.tags {
+  color: purple;
+}
+
+.banner {
+  height: 223px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 25px;
 }
 
 body {

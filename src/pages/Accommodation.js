@@ -13,6 +13,8 @@ function Accommodation() {
     description: "",
     location: "",
     pictures: [],
+    tags: [],
+    equipments: [],
   });
 
   useEffect(() => {
@@ -25,6 +27,8 @@ function Accommodation() {
         description: selectedAccommodation.description,
         location: selectedAccommodation.location,
         pictures: selectedAccommodation.pictures,
+        tags: selectedAccommodation.tags,
+        equipments: selectedAccommodation.equipments,
       });
     }
   }, [id]);
@@ -32,10 +36,22 @@ function Accommodation() {
   return (
     <>
       <Carrousel slide={accommodation.pictures} />
-      <h2>{accommodation.title}</h2>
-      <h3>{accommodation.location}</h3>
-      <p>{accommodation.name}</p>
-      <p>{accommodation.description}</p>
+      <section>
+        <article className="accommodationPresentation">
+          <div>
+            <h2>{accommodation.title}</h2>
+            <p>{accommodation.location}</p>
+          </div>
+          <p>{accommodation.name}</p>
+        </article>
+        <article>
+          <p className="tags">{accommodation.tags}</p>
+        </article>
+        <div>
+          <p>{accommodation.description}</p>
+          <p>{accommodation.equipments}</p>
+        </div>
+      </section>
     </>
   );
 }
