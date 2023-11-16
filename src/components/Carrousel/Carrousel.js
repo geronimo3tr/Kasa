@@ -1,6 +1,6 @@
 import { useState } from "react";
-import left from "../image/Left.png";
-import right from "../image/Right.png";
+import left from "../../image/Left.png";
+import right from "../../image/Right.png";
 
 function Carrousel({ slide }) {
   const [currentPicture, setCurrentPicture] = useState(0);

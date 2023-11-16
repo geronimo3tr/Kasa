@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Accommodation from "../pages/Accommodation";
-import Header from "./Header";
-import Footer from "./Footer";
+import Home from "../../pages/Home";
+import About from "../../pages/About";
+import Accommodation from "../../pages/Accommodation";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 function RouterKasa() {
   return (

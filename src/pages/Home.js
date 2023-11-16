@@ -1,6 +1,6 @@
 import data from "../data.json";
-import Card from "../components/Card";
-import Banner from "../components/Banner";
+import Card from "../components/Card/Card";
+import Banner from "../components/Banner/Banner";
 import bannerHome from "../image/bannerHome.png";
 
 function Home() {

@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import accommodationData from "../data";
-import Carrousel from "../components/Carrousel";
-import Collapse from "../components/Collapse";
+import Carrousel from "../components/Carrousel/Carrousel";
+import Collapse from "../components/Collapse/Collapse";
 
 function Accommodation() {
   const params = useParams();
@@ -50,7 +50,12 @@ function Accommodation() {
         </article>
         <section className="test">
           <Collapse title="Description" content={accommodation.description} />
-          <Collapse title="Equipements" content={accommodation.equipments} />
+          <Collapse
+            title="Equipements"
+            content={accommodation.equipments.map((equipement) => (
+              <div className="equipement">{equipement}</div>
+            ))}
+          />
         </section>
       </section>
     </>
