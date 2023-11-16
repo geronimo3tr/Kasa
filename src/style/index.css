@@ -123,6 +123,52 @@ footer h2 {
   border-radius: 25px;
 }
 
+.collapse-container {
+  width: 50%;
+}
+
+.test {
+  display: flex;
+  gap: 50px;
+}
+
+.collapse-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #FF6060;
+  color: white;
+  border-radius: 10px;
+}
+.collapse-title:hover {
+  cursor: pointer;
+}
+
+.collapse-text {
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 1rem;
+  color: #FF6060;
+}
+
+.collapse-container.open .collapse-text {
+  visibility: visible;
+  overflow: visible;
+  height: auto;
+  opacity: 1;
+  background: #F6F6F6;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: ease-in 1s;
+}
+
+.collapse-icon.open {
+  transform: rotateZ("-90deg");
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;

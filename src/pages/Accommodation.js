@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import accommodationData from "../data";
 import Carrousel from "../components/Carrousel";
+import Collapse from "../components/Collapse";
 
 function Accommodation() {
   const params = useParams();
@@ -47,10 +48,10 @@ function Accommodation() {
         <article>
           <p className="tags">{accommodation.tags}</p>
         </article>
-        <div>
-          <p>{accommodation.description}</p>
-          <p>{accommodation.equipments}</p>
-        </div>
+        <section className="test">
+          <Collapse title="Description" content={accommodation.description} />
+          <Collapse title="Equipements" content={accommodation.equipments} />
+        </section>
       </section>
     </>
   );
