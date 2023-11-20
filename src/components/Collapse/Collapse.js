@@ -1,5 +1,4 @@
 import { useState } from "react";
-import arrow from "../../image/arrow_up.png";
 
 function Collapse({ title, content }) {
   const [open, setOpen] = useState(false);
@@ -12,7 +11,7 @@ function Collapse({ title, content }) {
       {/* Ternaire */}
       <div className="collapse-title" onClick={toggle}>
         {title}
-        <img className={`collapse-icon ${open ? "open" : ""}`} src={arrow} alt={"chevron"} />
+        <i className={`collapse-icon fa-solid fa-chevron-up ${open ? "open" : ""}`} />
       </div>
       <div className="collapse-text">{content}</div>
     </div>

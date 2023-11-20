@@ -43,7 +43,10 @@
   border-bottom-right-radius: 10px;
 }
 
+.collapse-icon {
+  transition: all 0.5s ease;
+}
+
 .collapse-icon.open {
   transform: rotate(-180deg);
-  transition: all 0.5s ease;
 }/*# sourceMappingURL=collapse.css.map */

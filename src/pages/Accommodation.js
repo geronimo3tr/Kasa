@@ -1,38 +1,18 @@
 import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
 import accommodationData from "../data";
 import Carrousel from "../components/Carrousel/Carrousel";
 import Collapse from "../components/Collapse/Collapse";
+import Error from "./Error";
 
 function Accommodation() {
   const params = useParams();
   const { id } = params;
 
-  const [accommodation, setAccommodation] = useState({
-    title: "",
-    name: "",
-    description: "",
-    location: "",
-    pictures: [],
-    tags: [],
-    equipments: [],
-  });
+  const accommodation = accommodationData.find((item) => item.id === id);
 
-  useEffect(() => {
-    const selectedAccommodation = accommodationData.find((item) => item.id === id);
-
-    if (selectedAccommodation) {
-      setAccommodation({
-        title: selectedAccommodation.title,
-        name: selectedAccommodation.host.name,
-        description: selectedAccommodation.description,
-        location: selectedAccommodation.location,
-        pictures: selectedAccommodation.pictures,
-        tags: selectedAccommodation.tags,
-        equipments: selectedAccommodation.equipments,
-      });
-    }
-  }, [id]);
+  if (!accommodation) {
+    return <Error />;
+  }
 
   return (
     <>
