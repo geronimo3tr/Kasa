@@ -48,7 +48,7 @@ function Accommodation() {
         <article>
           <p className="tags">{accommodation.tags}</p>
         </article>
-        <section className="test">
+        <section className="accomodation-collapse-position">
           <Collapse title="Description" content={accommodation.description} />
           <Collapse
             title="Equipements"

@@ -127,9 +127,17 @@ footer h2 {
   width: 50%;
 }
 
-.test {
+.accomodation-collapse-position {
   display: flex;
   gap: 50px;
+}
+
+.about-collapse-position {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .collapse-title {
@@ -162,6 +170,31 @@ footer h2 {
 
 .collapse-icon.open {
   transform: rotate(-180deg);
+  transition: all 0.5s ease;
+}
+
+.error-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #FF6060;
+}
+
+.error {
+  font-weight: 700;
+  font-size: 228px;
+}
+
+.error-text {
+  font-size: 36px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.error-link {
+  margin-bottom: 193px;
+  color: #FF6060;
 }
 
 body {

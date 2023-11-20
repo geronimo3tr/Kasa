@@ -2,9 +2,17 @@
   width: 50%;
 }
 
-.test {
+.accomodation-collapse-position {
   display: flex;
   gap: 50px;
+}
+
+.about-collapse-position {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .collapse-title {
@@ -37,4 +45,5 @@
 
 .collapse-icon.open {
   transform: rotate(-180deg);
+  transition: all 0.5s ease;
 }/*# sourceMappingURL=collapse.css.map */

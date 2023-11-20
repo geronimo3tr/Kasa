@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "../../pages/Home";
 import About from "../../pages/About";
 import Accommodation from "../../pages/Accommodation";
+import Error from "../../pages/404";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
@@ -15,6 +16,7 @@ function RouterKasa() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/accommodation/:id" element={<Accommodation />} />
+            <Route path="/*" element={<Error />} />
           </Routes>
         </main>
         <Footer />
