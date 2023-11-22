@@ -109,6 +109,11 @@ footer h2 {
   font-size: 36px;
 }
 
+.tags-ratings {
+  display: flex;
+  justify-content: space-between;
+}
+
 .tags {
   color: purple;
 }
@@ -197,6 +202,14 @@ footer h2 {
 
 .error-link {
   margin-bottom: 193px;
+  color: #FF6060;
+}
+
+.fa-star {
+  color: #E3E3E3;
+}
+
+.active {
   color: #FF6060;
 }
 

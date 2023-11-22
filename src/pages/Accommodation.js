@@ -3,6 +3,7 @@ import accommodationData from "../data";
 import Carrousel from "../components/Carrousel/Carrousel";
 import Collapse from "../components/Collapse/Collapse";
 import Error from "./Error";
+import Rating from "../components/Rating/Rating";
 
 function Accommodation() {
   const params = useParams();
@@ -25,8 +26,9 @@ function Accommodation() {
           </div>
           <p>{accommodation.name}</p>
         </article>
-        <article>
+        <article className="tags-ratings">
           <p className="tags">{accommodation.tags}</p>
+          <Rating rating={accommodation.rating} />
         </article>
         <section className="accomodation-collapse-position">
           <Collapse title="Description" content={accommodation.description} />
