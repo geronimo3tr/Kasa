@@ -112,6 +112,7 @@ footer h2 {
 .tags-ratings {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .tags {
@@ -211,6 +212,33 @@ footer h2 {
 
 .active {
   color: #FF6060;
+}
+
+.tags-container {
+  display: flex;
+  gap: 10px;
+}
+
+.tag-container {
+  background-color: #FF6060;
+  border-radius: 10px;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.host-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.host-picture {
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
 }
 
 body {

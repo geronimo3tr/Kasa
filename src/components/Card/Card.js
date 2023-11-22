@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 function Card(props) {
   const accommodation = props.logement;
-  console.log(accommodation);
   return (
     <article className="card">
       <Link to={`/accommodation/${accommodation.id}`}>

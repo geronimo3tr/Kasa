@@ -4,6 +4,8 @@ import Carrousel from "../components/Carrousel/Carrousel";
 import Collapse from "../components/Collapse/Collapse";
 import Error from "./Error";
 import Rating from "../components/Rating/Rating";
+import Tags from "../components/Tags/Tags";
+import Host from "../components/Host/Host";
 
 function Accommodation() {
   const params = useParams();
@@ -24,10 +26,14 @@ function Accommodation() {
             <h2>{accommodation.title}</h2>
             <p>{accommodation.location}</p>
           </div>
-          <p>{accommodation.name}</p>
+          <Host name={accommodation.host.name} picture={accommodation.host.picture} />
         </article>
         <article className="tags-ratings">
-          <p className="tags">{accommodation.tags}</p>
+          <Tags
+            tags={accommodation.tags.map((tags) => (
+              <span className="tag-container">{tags}</span>
+            ))}
+          />
           <Rating rating={accommodation.rating} />
         </article>
         <section className="accomodation-collapse-position">
