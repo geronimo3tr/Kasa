@@ -21,22 +21,24 @@ function Accommodation() {
     <>
       <Carrousel slide={accommodation.pictures} />
       <section>
-        <article className="accommodationPresentation">
-          <div>
+        <article className="test">
+          <div className="title-tags">
             <h2>{accommodation.title}</h2>
             <p>{accommodation.location}</p>
+
+            <Tags
+              tags={accommodation.tags.map((tags) => (
+                <span className="tag-container">{tags}</span>
+              ))}
+            />
           </div>
-          <Host name={accommodation.host.name} picture={accommodation.host.picture} />
+
+          <div className="host-ratings">
+            <Host name={accommodation.host.name} picture={accommodation.host.picture} />
+            <Rating rating={accommodation.rating} />
+          </div>
         </article>
-        <article className="tags-ratings">
-          <Tags
-            tags={accommodation.tags.map((tags) => (
-              <span className="tag-container">{tags}</span>
-            ))}
-          />
-          <Rating rating={accommodation.rating} />
-        </article>
-        <section className="accomodation-collapse-position">
+        <article className="accomodation-collapse-position">
           <Collapse title="Description" content={accommodation.description} />
           <Collapse
             title="Equipements"
@@ -44,7 +46,7 @@ function Accommodation() {
               <div className="equipement">{equipement}</div>
             ))}
           />
-        </section>
+        </article>
       </section>
     </>
   );
