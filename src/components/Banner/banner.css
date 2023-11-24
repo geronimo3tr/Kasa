@@ -6,4 +6,12 @@
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 25px;
+  min-width: 335px;
+}
+
+@media screen and (max-width: 760px) {
+  .banner {
+    height: 111px;
+    min-width: 350px;
+  }
 }/*# sourceMappingURL=banner.css.map */

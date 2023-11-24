@@ -16,4 +16,10 @@ nav li {
 nav a {
   text-decoration: none;
   color: #ff6060;
+}
+
+@media screen and (max-width: 760px) {
+  header {
+    gap: 20px;
+  }
 }/*# sourceMappingURL=header.css.map */

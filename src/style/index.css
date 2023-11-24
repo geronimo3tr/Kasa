@@ -18,6 +18,11 @@ nav a {
   color: #ff6060;
 }
 
+@media screen and (max-width: 760px) {
+  header {
+    gap: 20px;
+  }
+}
 .Accomodation-card {
   display: flex;
   flex-wrap: wrap;
@@ -31,7 +36,7 @@ nav a {
 .card {
   position: relative;
   height: 340px;
-  width: 340px;
+  min-width: 340px;
   border-radius: 10px;
 }
 .card h3 {
@@ -57,6 +62,13 @@ nav a {
   position: absolute;
 }
 
+@media screen and (max-width: 760px) {
+  .Accomodation-card {
+    background-color: white;
+    min-width: 350px;
+    padding: 0px;
+  }
+}
 footer {
   display: flex;
   justify-content: center;
@@ -127,8 +139,15 @@ footer h2 {
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 25px;
+  min-width: 335px;
 }
 
+@media screen and (max-width: 760px) {
+  .banner {
+    height: 111px;
+    min-width: 350px;
+  }
+}
 .collapse-container {
   width: 50%;
 }
@@ -254,4 +273,11 @@ body main {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+@media screen and (max-width: 760px) {
+  body main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }/*# sourceMappingURL=index.css.map */
