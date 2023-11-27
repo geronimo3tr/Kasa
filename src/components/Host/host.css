@@ -18,4 +18,5 @@
 
 .host-fullname {
   display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=host.css.map */

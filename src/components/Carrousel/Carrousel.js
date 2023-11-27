@@ -20,6 +20,9 @@ function Carrousel({ slide }) {
         <img className="arrow arrowLeft" src={left} alt="Left" onClick={previousSlide} />
         <img className="carrouselSlide" src={slide[currentPicture]} alt={`Slide ${currentPicture}`} />
         <img className="arrow arrowRight" src={right} alt="Right" onClick={nextSlide} />
+        <span className="tracking-slide">
+          {currentPicture + 1}/{slideLength}
+        </span>
       </div>
     </>
   );
