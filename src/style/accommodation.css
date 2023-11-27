@@ -1,24 +1,20 @@
-.title-tags {
-  display: flex;
-  flex-direction: column;
-}
-.title-tags h2 {
-  font-weight: 500;
-  font-size: 36px;
-}
-
-.test {
+.text-host {
   display: flex;
   justify-content: space-between;
-  color: #FF6060;
   align-items: baseline;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  color: #FF6060;
 }
 
-.host-ratings {
+p {
+  line-height: 0;
+}
+
+.tags-rating {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 760px) {
