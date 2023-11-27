@@ -5,10 +5,11 @@ import bannerHome from "../image/bannerHome.png";
 
 function Home() {
   const logements = data.map((logement) => <Card logement={logement} />);
+  const homeText = "Chez vous, partout et ailleurs";
   return (
     <>
-      <Banner src={bannerHome} />
-      <div className="Accomodation-card">{logements}</div>
+      <Banner src={bannerHome} text={homeText} />
+      <section className="Accomodation-card">{logements}</section>
     </>
   );
 }

@@ -1,13 +1,32 @@
-.banner
-    height: 223px
+.banner-container
+    position: relative
     width: 100%
-    object-fit: cover
     margin-top: 20px 
     margin-bottom: 20px
-    border-radius:25px 
     min-width: 335px
+    img
+     max-height: 223px
+     width: 100%
+     object-fit: cover
+     border-radius:25px 
+    
+.banner-text 
+    display: flex
+    justify-content: center
+    align-items: center
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    position: absolute
+    color: white
+    font-size: 47px
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000
 
 @media screen and (max-width: 760px)
  .banner
     height: 111px
     min-width: 350px
+
+ .banner-text
+    font-size: 24px

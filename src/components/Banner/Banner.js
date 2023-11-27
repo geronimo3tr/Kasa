@@ -1,8 +1,9 @@
-function Banner({ src }) {
+function Banner({ src, text }) {
   return (
-    <div>
-      <img className="banner" src={src} alt="banner" />
-    </div>
+    <section className="banner-container">
+      <img src={src} alt="banner" />
+      <span className="banner-text">{text}</span>
+    </section>
   );
 }
 
