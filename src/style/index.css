@@ -130,11 +130,18 @@ footer h2 {
     display: none;
   }
 }
-.text-host {
+.accommodation-information {
   display: flex;
-  justify-content: space-between;
   align-items: baseline;
+  justify-content: space-between;
   margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.text-tags {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   color: #FF6060;
 }
 
@@ -142,22 +149,23 @@ p {
   line-height: 0;
 }
 
-.tags-rating {
+.host-rating {
   display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  flex-direction: column;
+  gap: 10px;
+  color: #FF6060;
 }
 
 @media screen and (max-width: 760px) {
-  .test {
+  .accommodation-information {
+    display: flex;
     flex-direction: column;
   }
-  .host-ratings {
+  .host-rating {
     flex-direction: row-reverse;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
+    align-items: center;
   }
 }
 .banner-container {
@@ -277,6 +285,7 @@ p {
   font-size: 36px;
   margin-top: 50px;
   margin-bottom: 100px;
+  text-align: center;
 }
 
 .error-link {
