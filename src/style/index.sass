@@ -1,6 +1,6 @@
 @import "../components//Header/header"
 @import "../components/Card/card"
-@import "footer"
+@import "../components/Footer/footer"
 @import "../components/Carrousel/carrousel"
 @import "accommodation"
 @import "../components/Banner/banner"
@@ -16,6 +16,7 @@ body
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
   box-sizing: border-box
+  font-family: 'Montserrat', sans-serif
 
   main
     padding: 0px 300px
@@ -25,7 +26,10 @@ code
 
 @media screen and (max-width: 760px)
  body
+  html
+     overflow: hidden
   main
-    padding-left: 20px
-    padding-right: 50px
+   padding: 0px 20px
+
+  
 
