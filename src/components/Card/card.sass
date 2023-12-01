@@ -1,8 +1,6 @@
 .Accomodation-card
  display: flex
- flex-wrap: wrap
  justify-content: center
- gap: 50px    
  background-color: #f6f6f6
  padding: 30px
  border-radius: 10px
@@ -10,13 +8,12 @@
 .card
  position: relative
  height: 340px
- min-width: 340px
+ min-width: 300px
  border-radius:10px 
  h3
   position: absolute
   bottom: 0
   color: white
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000
   margin-left: 10px
 
 .Accomodation-title
@@ -35,8 +32,10 @@
 @media screen and (max-width: 760px)
  .Accomodation-card
     background-color: white
-    min-width: 350px
     padding: 0px
+
+ .card
+    height: 255px
 
 
     

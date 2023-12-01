@@ -3,6 +3,7 @@ header {
   margin: 25px;
   display: flex;
   justify-content: space-between;
+  margin-left: 0;
 }
 
 nav {
@@ -26,12 +27,18 @@ nav a:hover {
     gap: 20px;
     text-transform: uppercase;
   }
+  .logo {
+    height: 45px;
+  }
+  nav {
+    min-width: 200px;
+    gap: 15px;
+    font-size: 12px;
+  }
 }
 .Accomodation-card {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 50px;
   background-color: #f6f6f6;
   padding: 30px;
   border-radius: 10px;
@@ -40,14 +47,13 @@ nav a:hover {
 .card {
   position: relative;
   height: 340px;
-  min-width: 340px;
+  min-width: 300px;
   border-radius: 10px;
 }
 .card h3 {
   position: absolute;
   bottom: 0;
   color: white;
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   margin-left: 10px;
 }
 
@@ -71,8 +77,10 @@ nav a:hover {
 @media screen and (max-width: 760px) {
   .Accomodation-card {
     background-color: white;
-    min-width: 350px;
     padding: 0px;
+  }
+  .card {
+    height: 255px;
   }
 }
 footer {
@@ -81,7 +89,7 @@ footer {
   align-items: center;
   background-color: #000000;
   height: 209px;
-  margin-top: 30px;
+  margin-top: 45px;
   flex-direction: column;
   gap: 30px;
 }
@@ -99,6 +107,10 @@ footer h2 {
     gap: 0px;
   }
 }
+h2 {
+  text-align: center;
+}
+
 .carrouselContainer {
   display: flex;
   position: relative;
@@ -129,16 +141,17 @@ footer h2 {
   margin-left: 50%;
   color: white;
   font-size: 18px;
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 @media screen and (max-width: 760px) {
   .carrouselSlide {
     height: 255px;
-    min-width: 335px;
   }
   .tracking-slide {
     display: none;
+  }
+  .arrow {
+    height: 40px;
   }
 }
 .accommodation-information {
@@ -154,6 +167,7 @@ footer h2 {
   flex-direction: column;
   gap: 10px;
   color: #FF6060;
+  align-items: baseline;
 }
 
 p {
@@ -167,6 +181,14 @@ p {
   color: #FF6060;
 }
 
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  max-width: 1300px;
+}
+
 @media screen and (max-width: 760px) {
   .accommodation-information {
     display: flex;
@@ -178,13 +200,17 @@ p {
     width: 100%;
     align-items: center;
   }
+  .card-container {
+    gap: 20px;
+  }
 }
 .banner-container {
   position: relative;
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
-  min-width: 335px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
 }
 .banner-container img {
   max-height: 223px;
@@ -192,6 +218,7 @@ p {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 25px;
+  opacity: 30%;
 }
 
 .banner-text {
@@ -205,7 +232,7 @@ p {
   position: absolute;
   color: white;
   font-size: 47px;
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  padding: 15px;
 }
 
 @media screen and (max-width: 760px) {
@@ -214,7 +241,10 @@ p {
     min-width: 350px;
   }
   .banner-text {
-    font-size: 24px;
+    font-size: 20px;
+  }
+  img {
+    height: 111px;
   }
 }
 .collapse-container {
@@ -262,6 +292,7 @@ p {
   border-bottom-right-radius: 10px;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
+  padding: 20px;
 }
 
 .collapse-icon {
@@ -307,6 +338,11 @@ p {
   color: #FF6060;
 }
 
+@media screen and (max-width: 760px) {
+  .error {
+    font-size: 150px;
+  }
+}
 .fa-star {
   color: #E3E3E3;
 }
@@ -320,6 +356,11 @@ p {
   gap: 10px;
 }
 
+@media screen and (max-width: 760px) {
+  .rating {
+    font-size: 13px;
+  }
+}
 .tags-container {
   display: flex;
   gap: 10px;
@@ -369,7 +410,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 body main {
-  padding: 0px 300px;
+  padding: 0px 100px;
 }
 
 code {
@@ -382,5 +423,6 @@ code {
   }
   body main {
     padding: 0px 20px;
+    overflow: hidden;
   }
 }/*# sourceMappingURL=index.css.map */

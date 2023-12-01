@@ -9,7 +9,9 @@ function Home() {
   return (
     <>
       <Banner src={bannerHome} text={homeText} />
-      <section className="Accomodation-card">{logements}</section>
+      <section className="Accomodation-card">
+        <div className="card-container">{logements}</div>
+      </section>
     </>
   );
 }

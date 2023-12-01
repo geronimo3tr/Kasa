@@ -21,4 +21,10 @@
 .error-link {
   margin-bottom: 193px;
   color: #FF6060;
+}
+
+@media screen and (max-width: 760px) {
+  .error {
+    font-size: 150px;
+  }
 }/*# sourceMappingURL=error.css.map */

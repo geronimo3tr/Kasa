@@ -9,4 +9,10 @@
 .rating {
   display: flex;
   gap: 10px;
+}
+
+@media screen and (max-width: 760px) {
+  .rating {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=rating.css.map */
