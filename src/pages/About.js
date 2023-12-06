@@ -8,8 +8,8 @@ function About() {
     <>
       <Banner src={bannerAbout} />
       <section className="about-collapse-position">
-        {aboutData.map((item) => (
-          <Collapse title={item.title} content={item.description} />
+        {aboutData.map((item, index) => (
+          <Collapse key={index} className="about-size-text" title={item.title} content={item.description} diffContainer />
         ))}
       </section>
     </>
