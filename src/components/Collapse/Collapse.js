@@ -1,13 +1,16 @@
 import { useState } from "react";
 
-function Collapse({ title, content }) {
+function Collapse({ title, content, diffContainer }) {
   const [open, setOpen] = useState(false);
 
   const toggle = () => {
     setOpen(!open);
   };
+
+  const collapseContainer = `collapse-container ${open ? "open" : ""} ${diffContainer ? "about-container" : ""}`;
+
   return (
-    <div className={`collapse-container ${open ? "open" : ""}`}>
+    <div className={collapseContainer}>
       {/* Ternaire */}
       <div className="collapse-title" onClick={toggle}>
         {title}

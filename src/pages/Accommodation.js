@@ -27,6 +27,7 @@ function Accommodation() {
             <p>{accommodation.location}</p>
           </div>
           <Tags
+            key={accommodation.id}
             tags={accommodation.tags.map((tags) => (
               <span className="tag-container">{tags}</span>
             ))}
@@ -35,15 +36,18 @@ function Accommodation() {
         <article className="host-rating">
           <Host name={accommodation.host.name} picture={accommodation.host.picture} />
 
-          <Rating rating={accommodation.rating} />
+          <Rating key={accommodation.id} rating={accommodation.rating} />
         </article>
       </section>
       <article className="accomodation-collapse-position">
         <Collapse title="Description" content={accommodation.description} />
         <Collapse
+          key={`${accommodation.id}-equipments`}
           title="Equipements"
-          content={accommodation.equipments.map((equipement) => (
-            <div className="equipement">{equipement}</div>
+          content={accommodation.equipments.map((equipement, index) => (
+            <div key={`${accommodation.id}-equipement-${index}`} className="equipement">
+              {equipement}
+            </div>
           ))}
         />
       </article>

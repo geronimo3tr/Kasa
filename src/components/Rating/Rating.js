@@ -5,7 +5,7 @@ function Rating(props) {
   const stars = [];
 
   for (let i = 1; i <= maxStars; i++) {
-    stars.push(<i className={`fa-solid fa-star ${i <= rating ? "active" : ""}`} />);
+    stars.push(<i key={i} className={`fa-solid fa-star ${i <= rating ? "active" : ""}`} />);
   }
 
   return <div className="rating">{stars}</div>;
