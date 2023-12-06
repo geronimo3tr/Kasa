@@ -4,7 +4,7 @@ import Banner from "../components/Banner/Banner";
 import bannerHome from "../image/bannerHome.png";
 
 function Home() {
-  const logements = data.map((logement) => <Card logement={logement} />);
+  const logements = data.map((logement) => <Card key={logement.id} logement={logement} />);
   const homeText = "Chez vous, partout et ailleurs";
   return (
     <>
