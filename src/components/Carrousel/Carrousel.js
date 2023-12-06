@@ -7,11 +7,11 @@ function Carrousel({ slide }) {
   const slideLength = slide.length;
 
   const nextSlide = () => {
-    setCurrentPicture((prevPicture) => (prevPicture + 1) % slideLength);
+    setCurrentPicture((currentPicture) => (currentPicture + 1) % slideLength);
   };
 
   const previousSlide = () => {
-    setCurrentPicture((prevPicture) => (prevPicture - 1 + slideLength) % slideLength);
+    setCurrentPicture((currentPicture) => (currentPicture - 1 + slideLength) % slideLength);
   };
 
   return (
